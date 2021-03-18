@@ -94,7 +94,6 @@ if __name__ == "__main__":
     smoothed_total_reward = 0
 
     while episode < max_episodes:
-        env.render()
         episode += 1
         total_reward = 0
         terminal = False
@@ -151,3 +150,6 @@ if __name__ == "__main__":
                 exit(0)
         else:
             reward_fulfilled = 0
+
+        env.render()
+        
