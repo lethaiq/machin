@@ -151,5 +151,3 @@ if __name__ == "__main__":
         else:
             reward_fulfilled = 0
 
-        env.render()
-        
