@@ -23,7 +23,7 @@ def create_env(env_name):
     # create multiagent environment
     env = MultiAgentEnv(world, scenario.reset_world, scenario.reward,
                         scenario.observation, info_callback=None,
-                        shared_viewer=False)
+                        shared_viewer=True)
     return env
 
 
@@ -94,7 +94,6 @@ if __name__ == "__main__":
     smoothed_total_reward = 0
 
     while episode < max_episodes:
-        env.render()
         episode += 1
         total_reward = 0
         terminal = False
